@@ -1,0 +1,140 @@
+:root {
+  color: #1a2332;
+  background: #eef2f6;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+.header h1 {
+  margin: 0 0 0.35rem;
+  font-size: 1.75rem;
+}
+
+.header p {
+  margin: 0;
+  color: #4a5568;
+}
+
+.upload-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: flex-end;
+  margin: 1.75rem 0 1.25rem;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #d0d7e2;
+}
+
+.file-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+  min-width: 200px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.file-label input {
+  font-weight: 400;
+}
+
+button {
+  padding: 0.55rem 1.1rem;
+  border: none;
+  background: #1f4e79;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.results {
+  background: #fff;
+  border: 1px solid #d0d7e2;
+  padding: 1rem 1.1rem 1.25rem;
+}
+
+.results h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+}
+
+.results h2 + .validation,
+.results table + h2 {
+  margin-top: 1.25rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.45rem 0.35rem;
+  border-bottom: 1px solid #e2e8f0;
+  vertical-align: top;
+}
+
+th {
+  width: 40%;
+  color: #4a5568;
+  font-weight: 600;
+}
+
+.validation {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.ok {
+  color: #17693a;
+}
+
+.bad {
+  color: #b42318;
+}
+
+.banner {
+  margin: 0.85rem 0;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid transparent;
+}
+
+.banner ul {
+  margin: 0.4rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.banner.error {
+  background: #fef3f2;
+  border-color: #fecdca;
+  color: #7a271a;
+}
+
+.banner.warn {
+  background: #fffaeb;
+  border-color: #fedf89;
+  color: #7a2e0e;
+}

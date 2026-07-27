@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from 'react'
 import './App.css'
 
-const API_URL = 'http://localhost:8000/api/v1/passport/extract'
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api/v1/passport/extract'
 
 type ValidationResult = {
   mrz_checksum_valid: boolean

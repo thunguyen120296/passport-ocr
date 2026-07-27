@@ -1,5 +1,5 @@
 from utils.tesseract_config import configure_tesseract
-
+import os
 configure_tesseract()
 
 from fastapi import FastAPI
